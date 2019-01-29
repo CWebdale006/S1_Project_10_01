@@ -1,0 +1,40 @@
+@charset "utf-8";
+
+/*
+   New Perspectives on HTML and CSS, 7th Edition
+   Tutorial 8
+   Case Problem 1
+
+   Rhetoric in the United States Styles for Media
+   Author: Connor J Webdale
+   Date: 1.29.19 
+
+   Filename: ws_media.css
+
+*/
+
+/* VideoPlayer Styles */
+/*Displays video elements as blocks with a width of 90% and horizontally centered. */
+video {
+    display: block;
+    width: 90%;
+    margin: 5px auto;
+}
+
+@media only screen and (min-width:521px) {
+
+    /*Sets the width of the video player to 360 pixels, floated on the right margin with a width of 10 pixels. */
+    video {
+        width: 360px;
+        float: right;
+        margin: 10px;
+    }
+}
+
+/* Track Styles */
+/*Displays the caption cues in a 1.3em sans-serif font with a red text color and a light grey background color. */
+::cue {
+    font: 1.3em sans-serif;
+    color: rgb(221, 128, 160);
+    background-color: rgba(255, 255, 255, 0.8);
+}
